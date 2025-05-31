@@ -23,6 +23,11 @@ public class ServiceStarter {
             System.out.println("Starting Order Service...");
             ProcessBuilder orderService = new ProcessBuilder("java", "-jar", "D:/Software Developer/Microservice Practise/microservices-jars/order-service-0.0.1-SNAPSHOT.jar");
             orderService.start();
+            
+            // Starting Payment Service
+            System.out.println("Starting Payment Service...");
+            ProcessBuilder paymentService = new ProcessBuilder("java", "-jar", "D:/Software Developer/Microservice Practise/microservices-jars/payment-service-0.0.1-SNAPSHOT.jar");
+            paymentService.start();
 
             // Starting API Gateway
             System.out.println("Starting API Gateway...");
